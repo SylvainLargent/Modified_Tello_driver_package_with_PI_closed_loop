@@ -28,23 +28,23 @@ Here an example of the config file of the mocap
 /opt/ros/melodic/share/mocap_optitrack/config/mocap.yaml 
 
 
-rigid_bodies:
-    '24':                                                           //MODIFY THE ID NUMBER of your rigid body in the mocaptitrack interface
+rigid_bodies:  
+    '24':                                                           //MODIFY THE ID NUMBER of your rigid body in the mocaptitrack interface  
         pose: Robot_1/pose
-        pose2d: Robot_1/ground_pose
-        odom: Robot_1/Odom
-        tf: tf
-        child_frame_id: Robot_1/base_link
-        parent_frame_id: world
-    '25':
-        pose: Cible/pose
-        pose2d: Cible/ground_pose
-        odom: Cible/Odom
-        tf: tf
-        child_frame_id: Cible/base_link
-        parent_frame_id: world
-optitrack_config:
-        multicast_address:                                            //ADRESS OF YOUR PLACE
-        command_port: 1510
-        data_port: 1511
-        enable_optitrack: true
+        pose2d: Robot_1/ground_pose  
+        odom: Robot_1/Odom  
+        tf: tf  
+        child_frame_id: Robot_1/base_link  
+        parent_frame_id: world  
+    '25':  
+        pose: Cible/pose  
+        pose2d: Cible/ground_pose  
+        odom: Cible/Odom  
+        tf: tf  
+        child_frame_id: Cible/base_link  
+        parent_frame_id: world  
+optitrack_config:  
+        multicast_address:                                            //ADRESS OF YOUR PLACE  
+        command_port: 1510  
+        data_port: 1511  
+        enable_optitrack: true  
