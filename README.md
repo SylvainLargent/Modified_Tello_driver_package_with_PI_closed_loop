@@ -1,5 +1,6 @@
 # Modified Tello_driver package with PI closed loop
 
+PLEASE FIND THE TELLO_DRIVER API ON THEIR WEBSITE
 (Before launching the asservissement_PI.launch, there is a need to roslaunch the tello_node.launch and be connected to the tello drone)
 
 REQUIREMENTS##########################################################
@@ -26,10 +27,7 @@ RECUPERATE THE RIGHT SRC FILES ASSOCIATED WITH THEM AND MODIFY YOUR Cmake and pa
 Here an example of the config file of the mocap 
 /opt/ros/melodic/share/mocap_optitrack/config/mocap.yaml 
 
-#
-# Definition of all trackable objects
-# Identifier corresponds to Trackable ID set in Tracking Tools
-#
+
 rigid_bodies:
     '24':                                                           //MODIFY THE ID NUMBER of your rigid body in the mocaptitrack interface
         pose: Robot_1/pose
